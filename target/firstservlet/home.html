@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>homework 1 submission</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        div #row {
+            display: flex;
+            flex-direction: row;
+        }
+
+        div #col {
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>About</h1>
+    <p>Welcome to the <b>Division of Computer Science and Engineering</b> at LSU! The division resides in the newly
+        formed School of Electrical Engineering and Computer Science (EECS) in the <i>College of Engineering.</i></p>
+    <h2>The location of our collaborators</h2>
+    <ul>
+        <li>USA</li>
+        <ul>
+            <li>New York</li>
+            <li>Columbus</li>
+            <li>Austin</li>
+            <li>Phily</li>
+        </ul>
+        <li>World</li>
+        <ul>
+            <li>Ottawa</li>
+            <li>Sydneyk</li>
+        </ul>
+    </ul>
+    <h2>Upcoming Classes</h2>
+    <table>
+        <tr>
+            <th>Location</th>
+            <th>Topic</th>
+        </tr>
+        <tr>
+            <td>New York</td>
+            <td>JavaScript & JQuery</td>
+        </tr>
+        <tr>
+            <td>San Francisco</td>
+            <td>HTML & CSS</td>
+        </tr>
+    </table>
+    <h2>Sign Up!</h2>
+    <form>
+        <div>
+            <label>Name: </label>
+            <input type="text">
+        </div>
+        <div>
+            <label>Email: </label>
+            <input type="email">
+        </div>
+        <div>
+            <label>Location: </label>
+            <select>
+                <option>San Francisco</option>
+                <option>New York</option>
+            </select>
+        </div>
+        <fieldset>
+            <legend>Gender: </legend>
+            <div>
+                <input type="radio" value="Female">
+                <input type="radio" value="Male">
+            </div>
+        </fieldset>
+
+        <div id="col">
+            <p>Experience:</p>
+            <textarea></textarea>
+            <button type="submit">Sign Up</button>
+        </div>
+        <div>
+            <p><a href="https://en.wikipedia.org/wiki/Twitter_under_Elon_Musk">twitter</a> | <a
+                    href="https://en.wikipedia.org/wiki/Facebook">facebook</a> | <a
+                    href="https://en.wikipedia.org/wiki/Flickr">flickr</a></p>
+        </div>
+    </form>
+
+</body>
+
+</html>
