@@ -60,4 +60,6 @@ public class servlet extends HttpServlet {
 		doGet(request, response);
 	}
 
+} HelloWorldEnhanced2 {
+    
 }
