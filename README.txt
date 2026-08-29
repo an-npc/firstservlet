@@ -7,7 +7,7 @@ C:\Program Files\Apache Software Foundation\Tomcat 10.1\webapps\firstservlet
 
 Important 
 mvn compile
-mvn clean
+mvn clean package
 
 INTRODUCTION TO THE STANDARD DIRECTORY LAYOUT
 source: https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html
