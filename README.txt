@@ -1,6 +1,14 @@
 This read me marks the resources used and acts as a reference guide for myself while coding
 This file was not AI generated
 
+quick access to my pathways
+C:\Program Files\Apache Software Foundation\Tomcat 10.1\bin
+C:\Program Files\Apache Software Foundation\Tomcat 10.1\webapps\firstservlet
+
+Important 
+mvn compile
+mvn clean
+
 INTRODUCTION TO THE STANDARD DIRECTORY LAYOUT
 source: https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html
 

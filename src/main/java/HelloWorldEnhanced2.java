@@ -10,7 +10,7 @@ import jakarta.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class Servlet1
  */
-@WebServlet("/register")
+@WebServlet("/HelloWorldEnhanced2")
 public class HelloWorldEnhanced2 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
