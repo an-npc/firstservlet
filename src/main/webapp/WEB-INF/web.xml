@@ -7,16 +7,4 @@
 
     <display-name>First Servlet Application</display-name>
 
-    <!-- Define your servlet -->
-    <servlet>
-        <servlet-name>HelloWorldEnhanced2</servlet-name>
-        <servlet-class>HelloWorldEnhanced2</servlet-class>
-    </servlet>
-
-    <!-- Map the servlet to a URL pattern -->
-    <servlet-mapping>
-        <servlet-name>HelloWorldEnhanced2</servlet-name>
-        <url-pattern>/register</url-pattern>
-    </servlet-mapping>
-
 </web-app>
