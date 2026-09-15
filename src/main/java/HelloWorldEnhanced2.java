@@ -40,7 +40,7 @@ public class HelloWorldEnhanced2 extends HttpServlet {
 			"<html>\n" +
 			"<head><title>User Registration</title></head>\n" +
 			"<body>\n" +
-			"<h1 align=\"center\"><img src='media/Thanksgiving.gif'> Welcome "+ name + "</h1>" +
+			"<h1 align=\"center\"><img src='http://54.81.47.117/Thanksgiving.gif'> Welcome "+ name + "</h1>" +
 			"<ul>\n" +
 			"<li><b>Your name</b>: " + name + "\n" +
 			"<li><b>Your email</b>: " + email + "\n" +
