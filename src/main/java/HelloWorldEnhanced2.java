@@ -1,5 +1,10 @@
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -34,6 +39,51 @@ public class HelloWorldEnhanced2 extends HttpServlet {
 		String location = request.getParameter("location");
 		String gender = request.getParameter("gender");
 		String experience = request.getParameter("experience");
+
+		// JDBC driver name and database URL
+		// String JDBC_DRIVER = "com.mysql.jdbc.Driver";
+		String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
+
+		String DB_URL = "jdbc:mysql://52.71.253.100:8081/student";
+		// String DB_URL = "jdbc:mysql://localhost:3306/testDB";
+
+		// Database credentials
+		String USER = "appuser";
+		String PASS = "3fsh+GAWDq39";
+		Connection conn = null;
+		Statement stmt = null;
+
+		//STEP 2: Register JDBC driver
+		try {
+			Class.forName(JDBC_DRIVER);
+
+			//STEP 3: Open a connection
+			System.out.println("Connecting to database...");
+			conn = (Connection) DriverManager.getConnection(DB_URL,USER,PASS);
+
+			//STEP 4: Execute a query
+			System.out.println("Creating statement...");
+			stmt = (Statement) conn.createStatement();
+			String sql;
+			sql = "SELECT * FROM STUDENT";
+			ResultSet rs = (ResultSet) stmt.executeQuery(sql);
+			
+			//STEP 5: Extract data from result set
+			while(rs.next()){
+				//Retrieve by column name
+				String myName = rs.getString("NAME");
+				String Myexperience = rs.getString("EXPERIENCE");
+				//Display values
+				System.out.print("name: " + myName);
+				System.out.println(", experience: " + Myexperience);
+				//return the query results to client
+				name = name + "-" + myName;
+				experience = experience + "-" + Myexperience;
+			}
+		} catch (ClassNotFoundException | SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 		String docType = "<!doctype html public \"-//w3c//dtd html 4.0 transitional//en\">\n";
 		out.println(docType +
