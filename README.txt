@@ -9,6 +9,9 @@ Important
 mvn compile
 mvn clean package
 
+Quick Access Link
+http://localhost:8081/firstservlet/
+
 INTRODUCTION TO THE STANDARD DIRECTORY LAYOUT
 source: https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html
 

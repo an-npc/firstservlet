@@ -44,12 +44,12 @@ public class HelloWorldEnhanced2 extends HttpServlet {
 		// String JDBC_DRIVER = "com.mysql.jdbc.Driver";
 		String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
 
-		String DB_URL = "jdbc:mysql://52.71.253.100:8081/student";
-		// String DB_URL = "jdbc:mysql://localhost:3306/testDB";
+		// String DB_URL = "jdbc:mysql://52.71.253.100:3306/testDB";
+		String DB_URL = "jdbc:mysql://localhost:3306/testDB";
 
 		// Database credentials
-		String USER = "appuser";
-		String PASS = "3fsh+GAWDq39";
+		String USER = "appuser1";
+		String PASS = "T0mc4t4610!";
 		Connection conn = null;
 		Statement stmt = null;
 
@@ -60,12 +60,14 @@ public class HelloWorldEnhanced2 extends HttpServlet {
 			//STEP 3: Open a connection
 			System.out.println("Connecting to database...");
 			conn = (Connection) DriverManager.getConnection(DB_URL,USER,PASS);
+			
+			System.out.println("Connection successful!");
 
 			//STEP 4: Execute a query
 			System.out.println("Creating statement...");
 			stmt = (Statement) conn.createStatement();
 			String sql;
-			sql = "SELECT * FROM STUDENT";
+			sql = "SELECT * FROM STUDENT;";
 			ResultSet rs = (ResultSet) stmt.executeQuery(sql);
 			
 			//STEP 5: Extract data from result set
@@ -90,7 +92,7 @@ public class HelloWorldEnhanced2 extends HttpServlet {
 			"<html>\n" +
 			"<head><title>User Registration</title></head>\n" +
 			"<body>\n" +
-			"<h1 align=\"center\"><img src='http://54.81.47.117/Thanksgiving.gif'> Welcome "+ name + "</h1>" +
+			"<h1 align=\"center\"><img src='http://54.81.47.117/Thanksgiving.gif' alt='Thanksgiving Gif'> Welcome "+ name + "</h1>" +
 			"<ul>\n" +
 			"<li><b>Your name</b>: " + name + "\n" +
 			"<li><b>Your email</b>: " + email + "\n" +
