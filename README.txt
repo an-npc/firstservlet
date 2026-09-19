@@ -12,6 +12,11 @@ mvn clean package
 Quick Access Link
 http://localhost:8081/firstservlet/
 
+Start Commands in ADMIN 
+local mysql:
+1. net start mysql8
+2. mysql -h localhost -u appuser1 -p
+
 INTRODUCTION TO THE STANDARD DIRECTORY LAYOUT
 source: https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html
 

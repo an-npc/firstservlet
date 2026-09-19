@@ -49,6 +49,7 @@ public class HelloWorldEnhanced2 extends HttpServlet {
 
 		// Database credentials
 		String USER = "appuser1";
+		String SERVERUSER = "root";
 		String PASS = "T0mc4t4610!";
 		Connection conn = null;
 		Statement stmt = null;
